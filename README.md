@@ -19,5 +19,14 @@ https://evil.com  >>>  hXXps://evil[.]com
 - ability to refang
 - auto-defang toggle switch
   - defang on email send
+  - defang on specific recipient address/domain
 - ability to add custom regex detection
 - find a free fang icon lol
+
+
+## dev
+
+1. serve plugin:  
+`npm start --prefix-path plugin/`  
+
+2. [upload manifest.xml](https://code.visualstudio.com/docs/other/office#_install-the-addin) to outlook

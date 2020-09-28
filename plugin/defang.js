@@ -1,27 +1,23 @@
-Office.onReady(() => {});
-
 function detectPatterns(bodyText){
-  matches = []
-  patterns = { // TODO these could be refined
+  var detects = []
+  var patterns = { // TODO these could be refined
     ip: /(\d{1,3}\.){3}\d{1,3}/ig,
     handler: /[^\s<>]+:\/\//ig,
     domain: /(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]/ig
   }
-  for (p in patterns){
-    match = bodyText.match(patterns[p])
-    for (m in match){
-      matches.push({pattern: p, match: match[m]})
+  for (var p in patterns){
+    var detect = bodyText.match(patterns[p])
+    for (var d in detect){
+      detects.push({pattern: p, match: detect[d]})
     }
   }
-  //uniqueMatches = new [...Set(matches)];
-  return matches
+  return detects
 }
 
-function sanitizeMessage(messageBody){
-  bodyText = messageBody['value']
-  matches = detectPatterns(bodyText)
+function sanitizeMessage(message){
+  var matches = detectPatterns(message)
   if (matches.length > 0){ 
-    for (m in matches){
+    for (var m in matches){
       console.log(matches[m])
     }
     // TODO replace matches
@@ -35,10 +31,10 @@ function defang(event) {
   Office.context.mailbox.item.body.getAsync("html", {asyncContext: "msgBody"},
     function(messageBody){
       // sanitize
-      matches = sanitizeMessage(messageBody)
+      var matches = sanitizeMessage(messageBody['value'])
 
       // notify
-      msgText = matches.length + ' items defanged.'
+      var msgText = matches.length + ' items defanged.'
       const message = {
         type: Office.MailboxEnums.ItemNotificationMessageType.InformationalMessage,
         message: msgText,
@@ -48,7 +44,7 @@ function defang(event) {
       Office.context.mailbox.item.notificationMessages.replaceAsync("defang", message);
     }
   );
-  event.completed();
+  try {event.completed()} catch(e) {if (e instanceof TypeError){}}
 }
   
 function getGlobal() {
@@ -64,4 +60,26 @@ function getGlobal() {
 // register funcs for add-in
 const g = getGlobal();
 g.defang = defang;
-  
+
+Office.onReady(info => {
+  if (info.host === Office.HostType.Outlook) {
+    document.getElementById("sideload-msg").style.display = "none";
+    document.getElementById("app-body").style.display = "flex";
+    document.getElementById("detect").onclick = function(){
+      Office.context.mailbox.item.body.getAsync("html", {asyncContext: "msgBody"},
+      function(message){
+        var detects = detectPatterns(message['value'])
+        for (var d in detects){
+
+          var value = detects[d]['pattern'] + ': ' + detects[d]['match']
+          var textnode = document.createTextNode(value);
+          var node = document.createElement("li")
+          node.appendChild(textnode)
+          document.getElementById("results").appendChild(node)
+        }
+        document.getElementById("results").style.display = 'block'
+      }
+    );
+    };
+  }
+});

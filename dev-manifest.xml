@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://localhost:3000/preview.html"/>
+        <SourceLocation DefaultValue="https://localhost:3000/defang.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -59,7 +59,7 @@
                     <bt:Image size="80" resid="Icon.80x80"/>
                   </Icon>
                   <Action xsi:type="ShowTaskpane">
-                    <SourceLocation resid="Preview.Url"/>
+                    <SourceLocation resid="Defang.Url"/>
                   </Action>
                 </Control>
                 <Control xsi:type="Button" id="DefangButton">
@@ -91,7 +91,6 @@
       </bt:Images>
       <bt:Urls>
         <bt:Url id="Defang.Url" DefaultValue="https://localhost:3000/defang.html"/>
-        <bt:Url id="Preview.Url" DefaultValue="https://localhost:3000/preview.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Contoso Add-in"/>

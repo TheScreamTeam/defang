@@ -22,6 +22,8 @@ function action(event) {
   // Show a notification message
   Office.context.mailbox.item.notificationMessages.replaceAsync("action", message);
 
+  console.log("test")
+
   // Be sure to indicate when the add-in command function is complete
   event.completed();
 }

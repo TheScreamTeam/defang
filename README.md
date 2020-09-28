@@ -18,7 +18,7 @@ https://evil.com  >>>  hXXps://evil[.]com
 - preview of defang content
 - ability to refang
 - auto-defang toggle switch
-  - defang on email send
+  - defang on email send - [limitation](https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/outlook-on-send-addins?tabs=windows#limitations)
   - defang on specific recipient address/domain
 - ability to add custom regex detection
 - find a free fang icon lol

@@ -28,7 +28,7 @@ https://evil.com  >>>  hXXps://evil[.]com
 
 1. serve plugin content:
     - generate cert:  
-    `openssl req -new -x509 -keyout server.pem -out localhost.pem -days 365 -nodes`
+    `openssl req -new -x509 -keyout localhost.pem -out localhost.pem -days 365 -nodes`
     - start server:  
     `python3 server.py plugin/ localhost.pem`
 

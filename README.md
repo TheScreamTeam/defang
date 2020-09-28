@@ -26,7 +26,10 @@ https://evil.com  >>>  hXXps://evil[.]com
 
 ## dev
 
-1. serve plugin:  
-`npm start --prefix-path plugin/`  
+1. serve plugin content:
+    - generate cert:  
+    `openssl req -new -x509 -keyout server.pem -out localhost.pem -days 365 -nodes`
+    - start server:  
+    `python3 server.py plugin/ localhost.pem`
 
-2. [upload manifest.xml](https://code.visualstudio.com/docs/other/office#_install-the-addin) to outlook
+2. [upload dev-manifest.xml](https://code.visualstudio.com/docs/other/office#_install-the-addin) to outlook

@@ -1,19 +1,19 @@
 Office.onReady(() => {});
 
-function detectPatterns(text){
+function detectPatterns(bodyText){
   matches = []
-  // TODO define patterns
-  patterns = [
-    /8\.8\.8\.8/igm,
-    /\.com/igm,
-    /[^\s\\]+:\/\//igm // TODO discard matches over 2,083 chars
-  ]
+  patterns = { // TODO these could be refined
+    ip: /(\d{1,3}\.){3}\d{1,3}/ig,
+    handler: /[^\s<>]+:\/\//ig,
+    domain: /(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z0-9][a-z0-9-]{0,61}[a-z0-9]/ig
+  }
   for (p in patterns){
-    match = text.match(patterns[p])
-    if (match){
-      matches = matches.concat(match)
+    match = bodyText.match(patterns[p])
+    for (m in match){
+      matches.push({pattern: p, match: match[m]})
     }
   }
+  //uniqueMatches = new [...Set(matches)];
   return matches
 }
 
@@ -21,8 +21,9 @@ function sanitizeMessage(messageBody){
   bodyText = messageBody['value']
   matches = detectPatterns(bodyText)
   if (matches.length > 0){ 
-    console.log('matches')
-    console.log(matches)
+    for (m in matches){
+      console.log(matches[m])
+    }
     // TODO replace matches
     // replaceMatches(matches, text)
   }
@@ -31,9 +32,8 @@ function sanitizeMessage(messageBody){
 
 function defang(event) {
   // get current message
-  Office.context.mailbox.item.body.getAsync("text", {asyncContext: "msgBody"},
+  Office.context.mailbox.item.body.getAsync("html", {asyncContext: "msgBody"},
     function(messageBody){
-
       // sanitize
       matches = sanitizeMessage(messageBody)
 

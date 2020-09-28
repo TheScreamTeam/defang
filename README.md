@@ -12,8 +12,8 @@ https://evil.com  >>>  hXXps://evil[.]com
 ```
 
 ## todo
-- define defang regex
-  - ip, domain, url
+- ~define defang regex~
+  - ~ip, domain, url~
 - auto-detect defang possibilities
 - preview of defang content
 - ability to refang

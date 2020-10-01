@@ -6,8 +6,8 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="defang"/>
   <Description DefaultValue="A template to get started."/>
-  <IconUrl DefaultValue="https://localhost:3000/icons/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/icons/icon-80.png"/>
+  <IconUrl DefaultValue="https://defang.s3-us-west-2.amazonaws.com/icons/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://defang.s3-us-west-2.amazonaws.com/icons/icon-80.png"/>
   <SupportUrl DefaultValue="https://www.contoso.com/help"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://localhost:3000/defang.html"/>
+        <SourceLocation DefaultValue="https://defang.s3-us-west-2.amazonaws.com/defang.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -85,12 +85,12 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://localhost:3000/icons/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://localhost:3000/icons/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://localhost:3000/icons/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://defang.s3-us-west-2.amazonaws.com/icons/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://defang.s3-us-west-2.amazonaws.com/icons/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://defang.s3-us-west-2.amazonaws.com/icons/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Defang.Url" DefaultValue="https://localhost:3000/defang.html"/>
+        <bt:Url id="Defang.Url" DefaultValue="https://defang.s3-us-west-2.amazonaws.com/defang.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Contoso Add-in"/>

@@ -1,8 +1,15 @@
-## Welcome to GitHub Pages
+## Sanitizes Indicators of Compromise
 
-You can use the [editor on GitHub](https://github.com/TheScreamTeam/defang/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Defang is an outlook plugin that allows you to quickly sanitize IPs, domains, and [protocol handlers](https://en.wikipedia.org/wiki/List_of_URI_schemes) while composing or receiving emails.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+```
+5.22.9.12  >>>  5[.]22[.]9[.]12
+evil.com   >>>  evil[.]com
+https://   >>>  https[:]//
+```
+
+
+This promotes the sharing of IOCs in a safe format that is consistently undetectable by email protections and other threat filters.
 
 ### Markdown
 
@@ -28,9 +35,9 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### Credits
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TheScreamTeam/defang/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Icons made by <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 
 ### Support or Contact
 

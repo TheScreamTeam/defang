@@ -6,9 +6,9 @@ defanging is the process of sanitizing ips, domains, and urls for safe handling.
 defanging is typically used when communicating indicators of compromise (IOCs), in order to not trigger security signatures.
 
 ```
-5.22.9.12         >>>  5[.]22[.]9[.]12
-evil.com          >>>  evil[.]com
-https://evil.com  >>>  hXXps://evil[.]com
+5.22.9.12  >>>  5[.]22[.]9[.]12
+evil.com   >>>  evil[.]com
+https://   >>>  https[:]//
 ```
 
 ## todo

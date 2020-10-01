@@ -1,4 +1,7 @@
 # defang
+
+![Build](https://github.com/TheScreamTeam/defang/workflows/.github/workflows/deploy.yml/badge.svg?branch=master)
+
 outlook plugin for defanging emails
 
 defanging is the process of sanitizing ips, domains, and urls for safe handling. 

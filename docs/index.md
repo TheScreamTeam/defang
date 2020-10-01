@@ -8,37 +8,22 @@ evil.com   >>>  evil[.]com
 https://   >>>  https[:]//
 ```
 
-
 This promotes the sharing of IOCs in a safe format that is consistently undetectable by email protections and other threat filters.
 
-### Markdown
+## Install / Test
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Download [manifest.xml](https://raw.githubusercontent.com/TheScreamTeam/defang/master/manifest.xml)
+- [Side-load](https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/sideload-outlook-add-ins-for-testing) into Outlook
 
-```markdown
-Syntax highlighted code block
+## Distribute
 
-# Header 1
-## Header 2
-### Header 3
+- Download [manifest.xml](https://raw.githubusercontent.com/TheScreamTeam/defang/master/manifest.xml)
+- [Deploy to Outlook users](https://docs.microsoft.com/en-us/office/dev/add-ins/publish/publish) via Microsoft 365 admin center, SharePoint catalog, or Exchange server.
 
-- Bulleted
-- List
+### Marketplace Sponsor
 
-1. Numbered
-2. List
+We would love to freely distribute this plugin via [Microsoft AppSource](https://appsource.microsoft.com/), but require business credentials. If you are interested in publishing this plugin, please contact michael[at]wtfender.com.
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Credits
+#### Credits
 
 Icons made by <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.

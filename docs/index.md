@@ -23,7 +23,3 @@ This promotes the sharing of IOCs in a safe format that is consistently undetect
 ### Marketplace Sponsor
 
 We would love to freely distribute this plugin via [Microsoft AppSource](https://appsource.microsoft.com/), but require business credentials. If you are interested in publishing this plugin, please contact michael[at]wtfender.com.
-
-#### Credits
-
-Icons made by <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>

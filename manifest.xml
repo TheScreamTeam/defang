@@ -2,13 +2,13 @@
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
   <Id>323c9d75-69ca-4f44-b590-48772e377ab9</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>Contoso</ProviderName>
+  <ProviderName>WTFender</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="defang"/>
-  <Description DefaultValue="A template to get started."/>
+  <Description DefaultValue="Sanitize indicators of compromise."/>
   <IconUrl DefaultValue="https://static.defang.wtfender.com/icons/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://static.defang.wtfender.com/icons/icon-80.png"/>
-  <SupportUrl DefaultValue="https://www.contoso.com/help"/>
+  <SupportUrl DefaultValue="https://github.com/WTFender/defang/issues"/>
   <AppDomains>
     <AppDomain>https://www.contoso.com</AppDomain>
   </AppDomains>

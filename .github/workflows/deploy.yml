@@ -22,4 +22,5 @@ jobs:
 
       - name: Upload to S3
         run: |
+          cp manifest.xml plugin/manifest.xml
           aws s3 sync plugin/ s3://defang/

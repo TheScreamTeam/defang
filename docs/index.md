@@ -1,4 +1,4 @@
-## Sanitizes Indicators of Compromise
+## Sanitize Indicators of Compromise
 
 Defang is an outlook plugin that allows you to quickly sanitize IPs, domains, and [protocol handlers](https://en.wikipedia.org/wiki/List_of_URI_schemes) while composing or receiving emails.
 

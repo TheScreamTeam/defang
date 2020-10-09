@@ -12,6 +12,7 @@ This promotes the sharing of IOCs in a safe format that is consistently undetect
 
 ## Install / Test
 
+- <a href="#" onclick="downloadManifest();">test</a>
 - Download [manifest.xml](https://raw.githubusercontent.com/TheScreamTeam/defang/master/manifest.xml)
 - [Side-load](https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/sideload-outlook-add-ins-for-testing) into Outlook
 
@@ -22,4 +23,4 @@ This promotes the sharing of IOCs in a safe format that is consistently undetect
 
 ### Marketplace Sponsor
 
-We would love to freely distribute this plugin via [Microsoft AppSource](https://appsource.microsoft.com/), but require business credentials. If you are interested in publishing this plugin, please contact michael[at]wtfender.com.
+I would love to freely distribute this plugin via [Microsoft AppSource](https://appsource.microsoft.com/), but require business credentials. If you are interested in publishing this plugin, please contact michael[at]wtfender.com.

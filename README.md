@@ -24,7 +24,7 @@ https://   >>>  https[:]//
   - defang on email send - [limitation](https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/outlook-on-send-addins?tabs=windows#limitations)
   - defang on specific recipient address/domain
 - ability to add custom regex detection
-- find a free fang icon lol
+- ~find a free fang icon lol~
 
 
 ## dev

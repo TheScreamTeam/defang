@@ -23,7 +23,7 @@
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
 
         <ul class="downloads">
-          <li><a href="#" onclick="downloadManifest();"></a>Download <strong>manifest.xml</strong></a></li>
+          <li><a href="#" onclick="downloadManifest();">Download <strong>Manifest</strong></a></a></li>
           <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
@@ -48,7 +48,7 @@
       ga('create', '{{ site.google_analytics }}', 'auto');
       ga('send', 'pageview');
       function downloadManifest(){
-        document.getElementById('manifest').src = 'https://raw.githubusercontent.com/WTFender/defang/master/manifest.xml';
+        document.getElementById('manifest').src = 'https://static.defang.wtfender.com/manifest.xml';
       }
     </script>
   </body>
